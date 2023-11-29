@@ -28,7 +28,7 @@ commands:
       label: "Package Native"
       component: tools
       workingDir: ${PROJECT_SOURCE}
-      commandLine: "./mvnw clean package -Dnative"
+      commandLine: "./mvnw clean package -Pnative -DskipTests "-Dquarkus.native.container-build=true" "-Dquarkus.native.builder-image=quay.io/quarkus/ubi-quarkus-mandrel-builder-image""
       group:
         kind: build
   - id: buildimagenative
