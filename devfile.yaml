@@ -28,7 +28,7 @@ commands:
       label: "Package Native"
       component: tools
       workingDir: ${PROJECT_SOURCE}
-      commandLine: "./mvnw package -Dnative"
+      commandLine: "./mvnw clean package -Dnative"
       group:
         kind: build
   - id: buildimagenative
