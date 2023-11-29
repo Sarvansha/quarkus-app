@@ -28,7 +28,7 @@ commands:
       label: "Package Native"
       component: tools
       workingDir: ${PROJECT_SOURCE}
-      commandLine: "./mvnw package -Dnative -Dmaven.test.skip -Dquarkus.native.native-image-xmx=3G  -Dquarkus.profile=staging"
+      commandLine: "./mvnw package -Dnative"
       group:
         kind: build
   - id: buildimagenative
